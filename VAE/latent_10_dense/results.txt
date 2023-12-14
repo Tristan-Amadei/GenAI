@@ -1,0 +1,41 @@
+Latent dimension = 10, dense: TrueModel: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 128)               640       
+                                                                 
+ dense_1 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_2 (Dense)             (None, 20)                1300      
+                                                                 
+=================================================================
+Total params: 10196 (39.83 KB)
+Trainable params: 10196 (39.83 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_3 (Dense)             (None, 128)               1408      
+                                                                 
+ dense_4 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_5 (Dense)             (None, 4)                 260       
+                                                                 
+=================================================================
+Total params: 9924 (38.77 KB)
+Trainable params: 9924 (38.77 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+
+Exponential noise: 1e-2
+Anderson: 24.501617565371625, Kendall: 0.05663098044154957
+
+Gaussian noise: 0, 1e-2
+Anderson: 479.8284789568929, Kendall: 0.0431750544289904
+
+Absolute value Gaussian noise: 0, 1e-2
+Anderson: 55.80923717446812, Kendall: 0.06065764614858664

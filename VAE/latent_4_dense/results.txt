@@ -1,0 +1,41 @@
+Latent dimension = 4, dense: TrueModel: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 128)               640       
+                                                                 
+ dense_1 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_2 (Dense)             (None, 8)                 520       
+                                                                 
+=================================================================
+Total params: 9416 (36.78 KB)
+Trainable params: 9416 (36.78 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_3 (Dense)             (None, 128)               640       
+                                                                 
+ dense_4 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_5 (Dense)             (None, 4)                 260       
+                                                                 
+=================================================================
+Total params: 9156 (35.77 KB)
+Trainable params: 9156 (35.77 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+
+Exponential noise: 1e-2
+Anderson: 25.116304282256614, Kendall: 0.05609703654389405
+
+Gaussian noise: 0, 1e-2
+Anderson: 365.04382344535117, Kendall: 0.07324666678662037
+
+Absolute value Gaussian noise: 0, 1e-2
+Anderson: 60.94576932249244, Kendall: 0.04528968818036238

@@ -1,0 +1,45 @@
+Latent dimension = 3, dense: TrueModel: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 128)               640       
+                                                                 
+ dense_1 (Dense)             (None, 128)               16512     
+                                                                 
+ dense_2 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_3 (Dense)             (None, 6)                 390       
+                                                                 
+=================================================================
+Total params: 25798 (100.77 KB)
+Trainable params: 25798 (100.77 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_4 (Dense)             (None, 128)               512       
+                                                                 
+ dense_5 (Dense)             (None, 128)               16512     
+                                                                 
+ dense_6 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_7 (Dense)             (None, 4)                 260       
+                                                                 
+=================================================================
+Total params: 25540 (99.77 KB)
+Trainable params: 25540 (99.77 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+
+Exponential noise: 1e-2
+Anderson: 29.3190998198313, Kendall: 0.06356865250013494
+
+Gaussian noise: 0, 1e-2
+Anderson: 386.39280730331257, Kendall: 0.07019180596289834
+
+Absolute value Gaussian noise: 0, 1e-2
+Anderson: 69.98775295000024, Kendall: 0.06751956744696547

@@ -1,0 +1,37 @@
+Latent dimension = 10, dense: FalseModel: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 64)                320       
+                                                                 
+ dense_1 (Dense)             (None, 20)                1300      
+                                                                 
+=================================================================
+Total params: 1620 (6.33 KB)
+Trainable params: 1620 (6.33 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_2 (Dense)             (None, 64)                704       
+                                                                 
+ dense_3 (Dense)             (None, 4)                 260       
+                                                                 
+=================================================================
+Total params: 964 (3.77 KB)
+Trainable params: 964 (3.77 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+
+Exponential noise: 1e-2
+Anderson: 17.43167077803846, Kendall: 0.08076245569210287
+
+Gaussian noise: 0, 1e-2
+Anderson: 697.4596350910394, Kendall: 0.035134857944833287
+
+Absolute value Gaussian noise: 0, 1e-2
+Anderson: 54.14020054847057, Kendall: 0.06698067545927272

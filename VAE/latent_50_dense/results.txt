@@ -1,0 +1,41 @@
+Latent dimension = 50, dense: TrueModel: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 128)               640       
+                                                                 
+ dense_1 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_2 (Dense)             (None, 100)               6500      
+                                                                 
+=================================================================
+Total params: 15396 (60.14 KB)
+Trainable params: 15396 (60.14 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_3 (Dense)             (None, 128)               6528      
+                                                                 
+ dense_4 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_5 (Dense)             (None, 4)                 260       
+                                                                 
+=================================================================
+Total params: 15044 (58.77 KB)
+Trainable params: 15044 (58.77 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+
+Exponential noise: 1e-2
+Anderson: 26.980700371927156, Kendall: 0.057887615380463144
+
+Gaussian noise: 0, 1e-2
+Anderson: 354.62902486534006, Kendall: 0.09180974143980423
+
+Absolute value Gaussian noise: 0, 1e-2
+Anderson: 56.53336287131115, Kendall: 0.06526854634111233

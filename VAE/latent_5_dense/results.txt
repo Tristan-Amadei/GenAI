@@ -1,0 +1,41 @@
+Latent dimension = 5, dense: TrueModel: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 128)               640       
+                                                                 
+ dense_1 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_2 (Dense)             (None, 10)                650       
+                                                                 
+=================================================================
+Total params: 9546 (37.29 KB)
+Trainable params: 9546 (37.29 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_3 (Dense)             (None, 128)               768       
+                                                                 
+ dense_4 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_5 (Dense)             (None, 4)                 260       
+                                                                 
+=================================================================
+Total params: 9284 (36.27 KB)
+Trainable params: 9284 (36.27 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+
+Exponential noise: 1e-2
+Anderson: 23.908828750045426, Kendall: 0.051802814113752094
+
+Gaussian noise: 0, 1e-2
+Anderson: 439.69102030713447, Kendall: 0.051076074635190816
+
+Absolute value Gaussian noise: 0, 1e-2
+Anderson: 54.53786069309208, Kendall: 0.049029904456879644
