@@ -17,6 +17,7 @@ def anderson_darling(real_data, generated_sample):
         Lm += anderson_darling_ticker(real_data, generated_sample, ticker)
     return Lm / generated_sample.shape[1]
 
+
 def compute_Zi(X, i):
     return np.sum(np.all(X[np.arange(X.shape[0]) != i] < X[i], axis=1)) / (X.shape[0]-1)
 
