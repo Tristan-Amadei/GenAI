@@ -1,0 +1,65 @@
+Latent dimension = 3, dense: True + Conv1DModel: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ reshape (Reshape)           (None, 4, 1)              0         
+                                                                 
+ conv1d (Conv1D)             (None, 2, 32)             128       
+                                                                 
+ flatten (Flatten)           (None, 64)                0         
+                                                                 
+ layer_normalization (Layer  (None, 64)                128       
+ Normalization)                                                  
+                                                                 
+ dense (Dense)               (None, 128)               8320      
+                                                                 
+ dropout (Dropout)           (None, 128)               0         
+                                                                 
+ dense_1 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_2 (Dense)             (None, 32)                2080      
+                                                                 
+ dense_3 (Dense)             (None, 6)                 198       
+                                                                 
+=================================================================
+Total params: 19110 (74.65 KB)
+Trainable params: 19110 (74.65 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_4 (Dense)             (None, 32)                128       
+                                                                 
+ dense_5 (Dense)             (None, 64)                2112      
+                                                                 
+ dense_6 (Dense)             (None, 128)               8320      
+                                                                 
+ dropout_1 (Dropout)         (None, 128)               0         
+                                                                 
+ reshape_1 (Reshape)         (None, 1, 128)            0         
+                                                                 
+ conv1d_transpose (Conv1DTr  (None, 3, 32)             12320     
+ anspose)                                                        
+                                                                 
+ flatten_1 (Flatten)         (None, 96)                0         
+                                                                 
+ dense_7 (Dense)             (None, 4)                 388       
+                                                                 
+=================================================================
+Total params: 23268 (90.89 KB)
+Trainable params: 23268 (90.89 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+
+Exponential noise: 1e-2
+Anderson: 21.099358005453354, Kendall: 0.07350981521132842
+
+Gaussian noise: 0, 1e-2
+Anderson: 273.71036485623443, Kendall: 0.08758389261744967
+
+Absolute value Gaussian noise: 0, 1e-2
+Anderson: 52.01495942097354, Kendall: 0.07347346924087303
